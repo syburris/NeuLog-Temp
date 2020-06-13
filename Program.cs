@@ -18,5 +18,12 @@ namespace NeuLog_Temp
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
+
+        public static void BeginExperiment()
+        {
+            
+        }
+
+      
     }
 }
