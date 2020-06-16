@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -22,17 +23,32 @@ namespace NeuLog_Temp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            running = true;
-            while(running == true)
+            
+            if(running == false)
             {
-               
+                running = true;
+                textBox3.Text += "Beginning experiment...\r\n";
             }
+            else
+            {
+                textBox3.Text += "Experiment is already running...\r\n";
+            }
+            
             
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            running = false;
+            if(running == true)
+            {
+                textBox3.Text += "Ending experiment...\r\n";
+                running = false;
+            }
+            else
+            {
+                textBox3.Text += "No experiment is currently running...\r\n";
+            }
+            
         }
 
         private void groupBox3_Enter(object sender, EventArgs e)

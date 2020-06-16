@@ -96,10 +96,11 @@
             this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.textBox3.Location = new System.Drawing.Point(6, 25);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox3.Size = new System.Drawing.Size(992, 286);
             this.textBox3.TabIndex = 0;
